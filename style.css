@@ -1,0 +1,108 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid magenta; */
+}
+
+body {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+.pTable {
+    display: grid;
+    /* outline: 3px solid black; */
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(7, 1fr) 10px 1fr 1fr;
+    gap: 0.5em;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.element {
+    background: white;
+    border: 1px solid #aaa;
+    max-width: 40px;
+    padding: 0.1em;
+    font-family: "Helvetica";
+    transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
+  }
+  
+.element:hover {
+    transform: scale(1.35, 1.35);
+    z-index: 1;
+    cursor: pointer;
+    border: 1px solid rgb(45,190,252);
+  }  
+
+.atomicNumber {
+    font-size: 0.6rem;
+}
+
+.atomicSymbol {
+    font-size: 1rem;
+}
+
+.atomicName {
+    font-size: 0.4rem;
+}
+
+.atom-info  {
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+    font-family: "Helvetica";
+    line-height: 1.5em;
+    font-size: 1rem;
+}
+
+.chemicals {
+    display: flex;
+    margin-top: 2em;
+}
+
+.addAtom {
+    padding: 0.25em;
+    max-width: 50%;
+    font-family: "Comic Sans Ms";
+    margin-top: 0.5em;
+}
+
+#input-chemicals {
+    width: 500px;
+    font-size: 1.25rem;
+    padding: 0.5em;
+    font-family: "Comic Sans Ms";
+    border-radius: 1em;
+    border: 1px solid grey;
+    display: flex;
+    padding-top: 0.65em;
+    height: 50px;
+}
+
+#atomic_symbol {
+    font-family: "Helvetica";
+}
+
+.control-button {
+    padding: 0 1em;
+    font-family: "Comic Sans Ms";
+    font-size: 1.25rem;
+    margin: 0.5em;
+}
+
+#plus-button {
+    margin-left: 0;
+}
+
+.menu {
+    margin: 0 2em;
+    width: 150px;
+}
