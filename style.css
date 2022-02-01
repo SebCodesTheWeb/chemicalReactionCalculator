@@ -24,12 +24,13 @@ body {
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
+    margin-right: 1em;
 }
 
 .element {
     background: white;
     border: 1px solid #aaa;
-    max-width: 40px;
+    max-width: 46px;
     padding: 0.1em;
     font-family: "Helvetica";
     transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
@@ -51,7 +52,7 @@ body {
 }
 
 .atomicName {
-    font-size: 0.4rem;
+    font-size: 8px;
 }
 
 .atom-info  {
@@ -66,6 +67,7 @@ body {
 .chemicals {
     display: flex;
     margin-top: 2em;
+    max-width: 100vw;
 }
 
 .addAtom {
@@ -73,6 +75,13 @@ body {
     max-width: 50%;
     font-family: "Comic Sans Ms";
     margin-top: 0.5em;
+}
+
+#addAtomButton {
+    width: 100px;
+    padding: 1em;
+    font-size: 1rem;
+    display: inline-block;
 }
 
 #input-chemicals {

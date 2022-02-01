@@ -347,7 +347,7 @@ function displayAtom(element) {
         <label for="addAtomMoles">Moles</label>
         <input type="number" placeholder="Specific Amount: " class="addAtom" id="addAtomAmount"></input>
         <label for="addAtomAmount" >Amount</label>
-        <input type="submit" value="Add atom" class="addAtom" style="display: block;"></input>
+        <input type="submit" value="Add atom" class="addAtom" style="display: block; id="addAtomButton"></input>
         </form>
         `
 
